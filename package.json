@@ -1,0 +1,22 @@
+{
+  "name": "cdc",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "cd backend/ && npm i && cd ../frontend/ && npm install",
+    "compose": "docker-compose up --build",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Maarceloo/CDC.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Maarceloo/CDC/issues"
+  },
+  "homepage": "https://github.com/Maarceloo/CDC#readme"
+}
