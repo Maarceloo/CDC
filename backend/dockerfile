@@ -10,4 +10,4 @@ COPY . .
 # evita erro de cache
 RUN chown -R 1001:1001 '/root/' 
 
-CMD ["npm", "run", "dev"]
+CMD ["npm", "run", "up:app"]
