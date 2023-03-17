@@ -20,6 +20,10 @@ const CartaoSchema = (sequelize, DataTypes) => {
           defaultValue: null,
           type: DataTypes.STRING,
         },
+        email: {
+          defaultValue: null,
+          type: DataTypes.STRING,
+        },
       },
       {
         tableName: "cartao",
