@@ -1,10 +1,13 @@
 const { Cartao } = require("../../src/database/models");
 
 const cadastroCartaoService = async (body) => {
-    console.log(body);
-    const newCartao = await Cartao.create(body)
-    console.log(newCartao);
-    return newCartao
+  const newCartao = await Cartao.create(body);
+  return newCartao;
 };
 
-module.exports = { cadastroCartaoService };
+const getAllCards = async ({ email }) => {
+  const cartoes = await Cartao.findAll({ where: { email }});
+  return cartoes;
+};
+
+module.exports = { cadastroCartaoService, getAllCards };

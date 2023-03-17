@@ -9,4 +9,14 @@ const cadastroCartaoController = async (req, res) => {
     }
 };
 
-module.exports = { cadastroCartaoController };
+const getAllCards = async (req, res) => {
+    try {
+        console.log();
+        const cards = await service.getAllCards(req.body)
+        return res.status(200).json(cards);
+    } catch (error) {
+        return res.status(404).json(`Erro no getAll: ${error}`)
+    }
+}
+
+module.exports = { cadastroCartaoController, getAllCards };
