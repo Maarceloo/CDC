@@ -11,7 +11,6 @@ const cadastroCartaoController = async (req, res) => {
 
 const getAllCards = async (req, res) => {
     try {
-        console.log();
         const cards = await service.getAllCards(req.body)
         return res.status(200).json(cards);
     } catch (error) {
